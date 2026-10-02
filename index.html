@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Magic Sax – barberare i Uppsala</title>
+<meta name="description" content="Klippning och skäggvård på Torgny Segersteds Allé 77 i Uppsala. Över 23 års erfarenhet. Boka tid online.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Franklin:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarberShop",
+  "name": "Magic Sax",
+  "image": "img/lokal.jpg",
+  "telephone": "+46722815438",
+  "email": "magicsaxen@gmail.com",
+  "address": {"@type": "PostalAddress", "streetAddress": "Torgny Segersteds Allé 77", "postalCode": "752 57", "addressLocality": "Uppsala", "addressCountry": "SE"},
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "28"},
+  "sameAs": ["https://www.instagram.com/magic.sax/", "https://timma.se/salon/sax-magic"]
+}
+</script>
+<style>
+:root{
+  --bg:#121212; --bg-2:#1b1a18; --line:#2f2c27;
+  --text:#efe9df; --muted:#a59d90;
+  --gold:#d9a93a; --gold-2:#f0c55a;
+  --head:"Anton", Impact, "Arial Narrow", sans-serif;
+  --body:"Libre Franklin", system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 var(--body)}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:1;margin:0}
+h2{font-size:clamp(40px,6vw,64px);margin-bottom:12px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:90px 0}
+
+.btn{display:inline-block;font:400 19px/1 var(--head);text-transform:uppercase;letter-spacing:.06em;text-decoration:none;padding:16px 26px;border:2px solid var(--gold);background:var(--gold);color:#16130c}
+.btn:hover{background:var(--gold-2);border-color:var(--gold-2)}
+.btn.ghost{background:transparent;color:var(--text);border-color:#5a5448}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(18,18,18,.94);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo img{width:48px;height:48px;border-radius:50%}
+.logo span{font:400 24px/1 var(--head);text-transform:uppercase;letter-spacing:.04em}
+header nav{display:flex;gap:28px;margin-left:auto}
+header nav a{text-decoration:none;font-weight:500;color:var(--muted)}
+header nav a:hover{color:var(--gold)}
+header .btn{padding:12px 18px;font-size:16px}
+@media (max-width:760px){header nav{display:none}header .btn{margin-left:auto}}
+
+/* hero */
+.hero{padding:0;border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;min-height:calc(88vh - 72px);padding-top:60px;padding-bottom:60px}
+.hero h1{font-size:clamp(58px,8.5vw,112px)}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{font-size:19px;color:var(--muted);max-width:40ch;margin:22px 0 32px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.rating{display:flex;align-items:center;gap:12px;margin-top:34px;font-size:15px;color:var(--muted)}
+.rating b{font:400 30px/1 var(--head);color:var(--text)}
+.stars{color:var(--gold);letter-spacing:2px;font-size:18px}
+.photo{position:relative;isolation:isolate}
+.photo img{width:100%;aspect-ratio:1;object-fit:cover;border:1px solid var(--line)}
+.photo::after{content:"";position:absolute;inset:16px -16px -16px 16px;border:2px solid var(--gold);z-index:-1}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;min-height:0;gap:40px}.photo{margin-right:16px}}
+
+/* priser */
+#priser{background:var(--bg-2);border-bottom:1px solid var(--line)}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:36px}
+.prices h3{font-size:30px;color:var(--gold);border-bottom:2px solid var(--gold);padding-bottom:10px;margin-bottom:6px}
+.item{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.item b{font-weight:700}
+.item .pr{font:400 22px/1.1 var(--head);color:var(--gold);white-space:nowrap}
+.item p{grid-column:1 / 3;margin:0;color:var(--muted);font-size:15px;line-height:1.5}
+.note{margin-top:40px;color:var(--muted);font-size:15px;max-width:70ch}
+@media (max-width:760px){.prices{grid-template-columns:1fr;gap:40px}}
+
+/* om oss */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.about p{color:var(--muted);max-width:56ch}
+.team{display:grid;gap:14px;margin-top:28px}
+.team div{border-left:3px solid var(--gold);padding:6px 0 6px 18px}
+.team b{display:block;font:400 26px/1.1 var(--head);text-transform:uppercase}
+.team span{color:var(--muted);font-size:15px}
+.quotes{display:grid;gap:18px}
+blockquote{margin:0;padding:26px 28px;background:var(--bg-2);border:1px solid var(--line)}
+blockquote p{margin:0 0 12px;font-size:17px;color:var(--text)}
+blockquote footer{font-size:14px;color:var(--muted)}
+blockquote .stars{font-size:15px;display:block;margin-bottom:10px}
+.quotes a{color:var(--gold);font-weight:500}
+@media (max-width:860px){.about{grid-template-columns:1fr;gap:40px}}
+
+/* hitta hit */
+#hitta{border-top:1px solid var(--line)}
+.visit{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px}
+.visit dl{margin:26px 0 0;display:grid;gap:20px}
+.visit dt{font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.visit dd{margin:0;font-size:18px}
+.visit dd a{text-decoration:none}
+.visit dd a:hover{color:var(--gold)}
+.map{border:1px solid var(--line);min-height:380px}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block;filter:grayscale(1) invert(.92) contrast(.9)}
+@media (max-width:860px){.visit{grid-template-columns:1fr}}
+
+footer.site{border-top:1px solid var(--line);padding:28px 0 100px;color:var(--muted);font-size:14px}
+footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (min-width:761px){footer.site{padding-bottom:28px}}
+
+.bookbar{display:none}
+@media (max-width:760px){
+  .bookbar{display:grid;grid-template-columns:1fr 1.6fr;position:fixed;left:0;right:0;bottom:0;z-index:30;border-top:1px solid var(--line)}
+  .bookbar a{text-align:center;padding:16px 8px calc(16px + env(safe-area-inset-bottom));font:400 18px/1 var(--head);text-transform:uppercase;letter-spacing:.06em;text-decoration:none;background:var(--bg-2)}
+  .bookbar a + a{background:var(--gold);color:#16130c}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#"><img src="img/logo.jpg" alt=""><span>Magic Sax</span></a>
+    <nav>
+      <a href="#priser">Priser</a>
+      <a href="#om">Om oss</a>
+      <a href="#hitta">Hitta hit</a>
+    </nav>
+    <a class="btn" href="https://timma.se/salon/sax-magic" target="_blank" rel="noopener">Boka tid</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Stil i varje <em>snitt</em></h1>
+      <p>Specialister på klippningar och skäggvård, med över 23 års erfarenhet. Mitt i Uppsala, på Torgny Segersteds Allé.</p>
+      <div class="actions">
+        <a class="btn" href="https://timma.se/salon/sax-magic" target="_blank" rel="noopener">Boka tid</a>
+        <a class="btn ghost" href="tel:+46722815438">Ring 072-28 15 438</a>
+      </div>
+      <div class="rating"><b>5,0</b><span><span class="stars">★★★★★</span><br>28 omdömen på Timma</span></div>
+    </div>
+    <div class="photo"><img src="img/lokal.jpg" alt="Salongen med barberstolar"></div>
+  </div>
+</section>
+
+<section id="priser">
+  <div class="wrap">
+    <h2>Priser</h2>
+    <div class="prices">
+      <div>
+        <h3>Klippningar</h3>
+        <div class="item"><b>Herrklippning</b><span class="pr">280 kr</span><p>Klippning, inklusive tvätt och fön.</p></div>
+        <div class="item"><b>Herrklippning och skägg</b><span class="pr">430 kr</span><p>Klippning och skägg, inklusive tvätt och fön.</p></div>
+        <div class="item"><b>Barber avancerad klippning</b><span class="pr">370 kr</span><p>Avancerade klippningar och fadeningar. Tvätt ingår, och vi avslutar med vax anpassat till håret och styling.</p></div>
+        <div class="item"><b>Barber hår &amp; skägg och vax</b><span class="pr">550 kr</span><p>Avancerad klippning och fadening med tvätt och vax. Skäggklippning med maskin, sax och kniv, värmehandduk, personligt anpassat raklödder och aftershave. Avslutas med vårdande skäggolja.</p></div>
+        <div class="item"><b>Klippning långt hår</b><span class="pr">400 kr</span><p>Klippning av långt hår, för alla.</p></div>
+        <div class="item"><b>Studentklippning</b><span class="pr">250 kr</span><p>Rabatterat pris för studenter.</p></div>
+        <div class="item"><b>Herrklippning (senior)</b><span class="pr">250 kr</span><p>Rabatterad klippning för pensionärer, inklusive tvätt och fön.</p></div>
+        <div class="item"><b>Barnklippning</b><span class="pr">250 kr</span><p>Klippning för barn upp till 10 år, inklusive tvätt.</p></div>
+      </div>
+      <div>
+        <h3>Skägg</h3>
+        <div class="item"><b>Amerikansk rakning</b><span class="pr">220 kr</span><p>Varm handduk, rakning med kniv och ansiktsmassage.</p></div>
+        <div class="item"><b>Skäggtrim</b><span class="pr">fr. 150 kr</span><p>Trimning av skägget med maskin, med skäggolja.</p></div>
+        <div class="item"><b>Skägg- och mustaschtrim</b><span class="pr">150 kr</span><p>Skägg- och mustaschtrim med maskin.</p></div>
+        <div class="item"><b>Mustaschtrim</b><span class="pr">100 kr</span><p>Trimning av mustasch med maskin.</p></div>
+        <p class="note">Boka enkelt online. Vi förbehåller oss rätten att debitera 50 % av bokningspriset vid utebliven ankomst eller avbokning senare än 24 timmar innan bokningens starttid.</p>
+        <p style="margin-top:24px"><a class="btn" href="https://timma.se/salon/sax-magic" target="_blank" rel="noopener">Se lediga tider</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="om">
+  <div class="wrap about">
+    <div>
+      <h2>Om oss</h2>
+      <p>Välkommen till Magic Sax. Vi har mer än 23 års erfarenhet av klippning och skägg, och sätter dina önskemål i fokus.</p>
+      <div class="team">
+        <div><b>Saleh</b><span>Mästare på skarpa linjer och detaljer.</span></div>
+        <div><b>Martin &amp; Hosam</b></div>
+      </div>
+    </div>
+    <div class="quotes">
+      <blockquote>
+        <span class="stars">★★★★★</span>
+        <p>Jättenöjd med resultatet av min skägg- och hårklippning. Trevligt bemötande. Rekommenderas starkt.</p>
+        <footer>Inge H, via Timma</footer>
+      </blockquote>
+      <blockquote>
+        <span class="stars">★★★★★</span>
+        <p>Bokat tid, ingen väntan. Till och med start innan min bokade tid. Snabbt arbete, bra resultat!</p>
+        <footer>Anders E, via Timma</footer>
+      </blockquote>
+      <a href="https://timma.se/salon/sax-magic" target="_blank" rel="noopener">Läs alla 28 omdömen på Timma →</a>
+    </div>
+  </div>
+</section>
+
+<section id="hitta">
+  <div class="wrap visit">
+    <div>
+      <h2>Hitta hit</h2>
+      <dl>
+        <div><dt>Adress</dt><dd><a href="https://maps.google.com/?q=Torgny%20Segersteds%20All%C3%A9%2077,%20752%2057%20Uppsala" target="_blank" rel="noopener">Torgny Segersteds Allé 77<br>752 57 Uppsala</a></dd></div>
+        <div><dt>Telefon</dt><dd><a href="tel:+46722815438">072-28 15 438</a></dd></div>
+        <div><dt>E-post</dt><dd><a href="mailto:magicsaxen@gmail.com">magicsaxen@gmail.com</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/magic.sax/" target="_blank" rel="noopener">@magic.sax</a></dd></div>
+      </dl>
+    </div>
+    <div class="map">
+      <iframe title="Karta till Magic Sax" loading="lazy" src="https://www.google.com/maps?q=Torgny+Segersteds+All%C3%A9+77,+752+57+Uppsala&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© Magic Sax · Torgny Segersteds Allé 77, Uppsala</span>
+    <span><a href="https://boka.timma.se/dataprotection/MagicSax" target="_blank" rel="noopener">Integritetspolicy</a></span>
+  </div>
+</footer>
+
+<div class="bookbar">
+  <a href="tel:+46722815438">Ring</a>
+  <a href="https://timma.se/salon/sax-magic" target="_blank" rel="noopener">Boka tid</a>
+</div>
+</body>
+</html>
